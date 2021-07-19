@@ -1,0 +1,172 @@
+:root {
+    --background-color: #202124;
+    --background-secondary: #303134;
+    --text-color: #bdc1c6;
+    --text-white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: "Arial", sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    /* width: 100%; */
+    border-radius: 25px;
+    height:25px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 8.5px;
+    margin-left: 8px;
+    padding: 6px;
+    font-size: 14px;
+    color: var(--text-color);
+    height: 40px;
+}
+
+nav a {
+    cursor: pointer;
+    margin-left: 14px;
+}
+
+nav i {
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+nav img {
+    cursor: pointer;
+    margin-left: 14px;
+    margin-right: 14px;
+    position: relative;
+    top: 7px;
+    height: 30px;
+    width: 30px;
+}
+
+nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+.row-left a {
+    color: var(--text-color);
+}
+
+.row-left a:hover {
+    border-bottom: 1px solid var(--text-color);
+}
+
+.row-right a {
+    color: white;
+}
+
+.row-right a:hover {
+    border-bottom: 1px solid white;
+} 
+
+/* Search / CTA */
+.main {
+    height: 230px;
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+
+.logo {
+    height: 5.5rem;
+}
+
+.search input[type="text"] {
+    margin-top: 20px;
+    width: 37%;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: var(--text-white);
+    outline: none;
+    border: 1px solid gray;
+}
+
+.search input[type="text"]:hover {
+    border: none;
+    background-color: var(--background-secondary);
+}
+
+.search-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: var(--background-secondary);
+    box-shadow: 0 1px 3px rgba(23,23,23,0.24);
+    border-radius: 5px;
+    color: var(--text-white);
+    margin: 2.5rem 4px;
+    padding: 0.5rem 16px;
+    
+    font-weight: 200;
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16.86rem;
+    color: var(--text-color);
+    background: rgba(0, 0, 0, 0.363);
+    padding: 0 20px;
+    height: 47px;
+    font-size: 14px;
+}
+
+footer a {
+    cursor: pointer;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 10px 10px 0 10px;
+
+    position: relative;
+    left: -1rem;
+}
+
+.middle a {
+    position: relative;
+    left: -4.5rem;
+}
+
+footer a:hover {
+    border-bottom: 1px solid var(--text-color);
+}
